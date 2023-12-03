@@ -1,0 +1,675 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		365835612A83F93C00437F88 /* Telemetry_Graphs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365835602A83F93C00437F88 /* Telemetry_Graphs.swift */; };
+		3665FFA12A80462700584431 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3665FFA02A80462700584431 /* AppDelegate.swift */; };
+		3665FFA32A80462700584431 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3665FFA22A80462700584431 /* ViewController.swift */; };
+		3665FFA52A80462800584431 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3665FFA42A80462800584431 /* Assets.xcassets */; };
+		3665FFA82A80462800584431 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3665FFA62A80462800584431 /* Main.storyboard */; };
+		3665FFB32A80462800584431 /* Aerosentinel_GCSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3665FFB22A80462800584431 /* Aerosentinel_GCSTests.swift */; };
+		3665FFBD2A80462800584431 /* Aerosentinel_GCSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3665FFBC2A80462800584431 /* Aerosentinel_GCSUITests.swift */; };
+		3665FFBF2A80462800584431 /* Aerosentinel_GCSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3665FFBE2A80462800584431 /* Aerosentinel_GCSUITestsLaunchTests.swift */; };
+		3665FFE92A80596400584431 /* ORSSerial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3665FFE32A80534100584431 /* ORSSerial.framework */; };
+		3697748A2A82FDA2005BFE39 /* AeroSentinel_Rocket.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 369774892A82FDA2005BFE39 /* AeroSentinel_Rocket.usdz */; };
+		36A824312A83A74800356FD6 /* Aerosentinel_Scene.scn in Resources */ = {isa = PBXBuildFile; fileRef = 36A824302A83A74800356FD6 /* Aerosentinel_Scene.scn */; };
+		36ADA3C22A84BA7400EB7317 /* Stage_Control.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36ADA3C12A84BA7400EB7317 /* Stage_Control.swift */; };
+		36D3DB4C2A83EB4200D4BE8C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36D3DB4B2A83EB4100D4BE8C /* CoreGraphics.framework */; };
+		36D3DB4E2A83ED5600D4BE8C /* Level_Indicators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D3DB4D2A83ED5600D4BE8C /* Level_Indicators.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3665FFAF2A80462800584431 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3665FF952A80462700584431 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3665FF9C2A80462700584431;
+			remoteInfo = "Aerosentinel GCS";
+		};
+		3665FFB92A80462800584431 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3665FF952A80462700584431 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3665FF9C2A80462700584431;
+			remoteInfo = "Aerosentinel GCS";
+		};
+		3665FFE22A80534100584431 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3665FFDD2A80534100584431 /* ORSSerialPort.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9DCA89121A2BB106009285EB;
+			remoteInfo = ORSSerial;
+		};
+		3665FFE42A80534100584431 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3665FFDD2A80534100584431 /* ORSSerialPort.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9D7472131B6D7767002D8B10;
+			remoteInfo = "ORSSerialPort Tests";
+		};
+		3665FFE62A80594F00584431 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3665FFDD2A80534100584431 /* ORSSerialPort.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DCA89111A2BB106009285EB;
+			remoteInfo = ORSSerial;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		365835602A83F93C00437F88 /* Telemetry_Graphs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Telemetry_Graphs.swift; sourceTree = "<group>"; };
+		3665FF9D2A80462700584431 /* Aerosentinel GCS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Aerosentinel GCS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3665FFA02A80462700584431 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3665FFA22A80462700584431 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3665FFA42A80462800584431 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3665FFA72A80462800584431 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3665FFA92A80462800584431 /* Aerosentinel_GCS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Aerosentinel_GCS.entitlements; sourceTree = "<group>"; };
+		3665FFAE2A80462800584431 /* Aerosentinel GCSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Aerosentinel GCSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3665FFB22A80462800584431 /* Aerosentinel_GCSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aerosentinel_GCSTests.swift; sourceTree = "<group>"; };
+		3665FFB82A80462800584431 /* Aerosentinel GCSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Aerosentinel GCSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3665FFBC2A80462800584431 /* Aerosentinel_GCSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aerosentinel_GCSUITests.swift; sourceTree = "<group>"; };
+		3665FFBE2A80462800584431 /* Aerosentinel_GCSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aerosentinel_GCSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3665FFDD2A80534100584431 /* ORSSerialPort.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ORSSerialPort.xcodeproj; path = "ORSSerialPort-master/Framework Project/ORSSerialPort.xcodeproj"; sourceTree = "<group>"; };
+		369774892A82FDA2005BFE39 /* AeroSentinel_Rocket.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = AeroSentinel_Rocket.usdz; sourceTree = "<group>"; };
+		36A824302A83A74800356FD6 /* Aerosentinel_Scene.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Aerosentinel_Scene.scn; sourceTree = "<group>"; };
+		36ADA3C12A84BA7400EB7317 /* Stage_Control.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stage_Control.swift; sourceTree = "<group>"; };
+		36D3DB4B2A83EB4100D4BE8C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		36D3DB4D2A83ED5600D4BE8C /* Level_Indicators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level_Indicators.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3665FF9A2A80462700584431 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36D3DB4C2A83EB4200D4BE8C /* CoreGraphics.framework in Frameworks */,
+				3665FFE92A80596400584431 /* ORSSerial.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3665FFAB2A80462800584431 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3665FFB52A80462800584431 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3665FF942A80462700584431 = {
+			isa = PBXGroup;
+			children = (
+				3665FFDD2A80534100584431 /* ORSSerialPort.xcodeproj */,
+				3665FF9F2A80462700584431 /* Aerosentinel GCS */,
+				3665FFB12A80462800584431 /* Aerosentinel GCSTests */,
+				3665FFBB2A80462800584431 /* Aerosentinel GCSUITests */,
+				3665FF9E2A80462700584431 /* Products */,
+				3665FFE82A80596400584431 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3665FF9E2A80462700584431 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3665FF9D2A80462700584431 /* Aerosentinel GCS.app */,
+				3665FFAE2A80462800584431 /* Aerosentinel GCSTests.xctest */,
+				3665FFB82A80462800584431 /* Aerosentinel GCSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3665FF9F2A80462700584431 /* Aerosentinel GCS */ = {
+			isa = PBXGroup;
+			children = (
+				369774892A82FDA2005BFE39 /* AeroSentinel_Rocket.usdz */,
+				3665FFA02A80462700584431 /* AppDelegate.swift */,
+				3665FFA22A80462700584431 /* ViewController.swift */,
+				3665FFA42A80462800584431 /* Assets.xcassets */,
+				3665FFA62A80462800584431 /* Main.storyboard */,
+				3665FFA92A80462800584431 /* Aerosentinel_GCS.entitlements */,
+				36A824302A83A74800356FD6 /* Aerosentinel_Scene.scn */,
+				36D3DB4D2A83ED5600D4BE8C /* Level_Indicators.swift */,
+				365835602A83F93C00437F88 /* Telemetry_Graphs.swift */,
+				36ADA3C12A84BA7400EB7317 /* Stage_Control.swift */,
+			);
+			path = "Aerosentinel GCS";
+			sourceTree = "<group>";
+		};
+		3665FFB12A80462800584431 /* Aerosentinel GCSTests */ = {
+			isa = PBXGroup;
+			children = (
+				3665FFB22A80462800584431 /* Aerosentinel_GCSTests.swift */,
+			);
+			path = "Aerosentinel GCSTests";
+			sourceTree = "<group>";
+		};
+		3665FFBB2A80462800584431 /* Aerosentinel GCSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3665FFBC2A80462800584431 /* Aerosentinel_GCSUITests.swift */,
+				3665FFBE2A80462800584431 /* Aerosentinel_GCSUITestsLaunchTests.swift */,
+			);
+			path = "Aerosentinel GCSUITests";
+			sourceTree = "<group>";
+		};
+		3665FFDE2A80534100584431 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3665FFE32A80534100584431 /* ORSSerial.framework */,
+				3665FFE52A80534100584431 /* ORSSerialPort Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3665FFE82A80596400584431 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				36D3DB4B2A83EB4100D4BE8C /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3665FF9C2A80462700584431 /* Aerosentinel GCS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3665FFC22A80462800584431 /* Build configuration list for PBXNativeTarget "Aerosentinel GCS" */;
+			buildPhases = (
+				3665FF992A80462700584431 /* Sources */,
+				3665FF9A2A80462700584431 /* Frameworks */,
+				3665FF9B2A80462700584431 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3665FFE72A80594F00584431 /* PBXTargetDependency */,
+			);
+			name = "Aerosentinel GCS";
+			productName = "Aerosentinel GCS";
+			productReference = 3665FF9D2A80462700584431 /* Aerosentinel GCS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3665FFAD2A80462800584431 /* Aerosentinel GCSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3665FFC52A80462800584431 /* Build configuration list for PBXNativeTarget "Aerosentinel GCSTests" */;
+			buildPhases = (
+				3665FFAA2A80462800584431 /* Sources */,
+				3665FFAB2A80462800584431 /* Frameworks */,
+				3665FFAC2A80462800584431 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3665FFB02A80462800584431 /* PBXTargetDependency */,
+			);
+			name = "Aerosentinel GCSTests";
+			productName = "Aerosentinel GCSTests";
+			productReference = 3665FFAE2A80462800584431 /* Aerosentinel GCSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3665FFB72A80462800584431 /* Aerosentinel GCSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3665FFC82A80462800584431 /* Build configuration list for PBXNativeTarget "Aerosentinel GCSUITests" */;
+			buildPhases = (
+				3665FFB42A80462800584431 /* Sources */,
+				3665FFB52A80462800584431 /* Frameworks */,
+				3665FFB62A80462800584431 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3665FFBA2A80462800584431 /* PBXTargetDependency */,
+			);
+			name = "Aerosentinel GCSUITests";
+			productName = "Aerosentinel GCSUITests";
+			productReference = 3665FFB82A80462800584431 /* Aerosentinel GCSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3665FF952A80462700584431 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					3665FF9C2A80462700584431 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					3665FFAD2A80462800584431 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 3665FF9C2A80462700584431;
+					};
+					3665FFB72A80462800584431 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 3665FF9C2A80462700584431;
+					};
+				};
+			};
+			buildConfigurationList = 3665FF982A80462700584431 /* Build configuration list for PBXProject "Aerosentinel GCS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3665FF942A80462700584431;
+			productRefGroup = 3665FF9E2A80462700584431 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3665FFDE2A80534100584431 /* Products */;
+					ProjectRef = 3665FFDD2A80534100584431 /* ORSSerialPort.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				3665FF9C2A80462700584431 /* Aerosentinel GCS */,
+				3665FFAD2A80462800584431 /* Aerosentinel GCSTests */,
+				3665FFB72A80462800584431 /* Aerosentinel GCSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3665FFE32A80534100584431 /* ORSSerial.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ORSSerial.framework;
+			remoteRef = 3665FFE22A80534100584431 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3665FFE52A80534100584431 /* ORSSerialPort Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "ORSSerialPort Tests.xctest";
+			remoteRef = 3665FFE42A80534100584431 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3665FF9B2A80462700584431 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3697748A2A82FDA2005BFE39 /* AeroSentinel_Rocket.usdz in Resources */,
+				3665FFA52A80462800584431 /* Assets.xcassets in Resources */,
+				36A824312A83A74800356FD6 /* Aerosentinel_Scene.scn in Resources */,
+				3665FFA82A80462800584431 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3665FFAC2A80462800584431 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3665FFB62A80462800584431 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3665FF992A80462700584431 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				365835612A83F93C00437F88 /* Telemetry_Graphs.swift in Sources */,
+				3665FFA32A80462700584431 /* ViewController.swift in Sources */,
+				36D3DB4E2A83ED5600D4BE8C /* Level_Indicators.swift in Sources */,
+				36ADA3C22A84BA7400EB7317 /* Stage_Control.swift in Sources */,
+				3665FFA12A80462700584431 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3665FFAA2A80462800584431 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3665FFB32A80462800584431 /* Aerosentinel_GCSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3665FFB42A80462800584431 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3665FFBD2A80462800584431 /* Aerosentinel_GCSUITests.swift in Sources */,
+				3665FFBF2A80462800584431 /* Aerosentinel_GCSUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3665FFB02A80462800584431 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3665FF9C2A80462700584431 /* Aerosentinel GCS */;
+			targetProxy = 3665FFAF2A80462800584431 /* PBXContainerItemProxy */;
+		};
+		3665FFBA2A80462800584431 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3665FF9C2A80462700584431 /* Aerosentinel GCS */;
+			targetProxy = 3665FFB92A80462800584431 /* PBXContainerItemProxy */;
+		};
+		3665FFE72A80594F00584431 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ORSSerial;
+			targetProxy = 3665FFE62A80594F00584431 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3665FFA62A80462800584431 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3665FFA72A80462800584431 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3665FFC02A80462800584431 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3665FFC12A80462800584431 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		3665FFC32A80462800584431 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = "Aerosentinel GCS/Aerosentinel_GCS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				INFOPLIST_KEY_UILaunchStoryboardName = Main.storyboard;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Aerosentinel.Aerosentinel-GCS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3665FFC42A80462800584431 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = "Aerosentinel GCS/Aerosentinel_GCS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				INFOPLIST_KEY_UILaunchStoryboardName = Main.storyboard;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Aerosentinel.Aerosentinel-GCS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		3665FFC62A80462800584431 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Aerosentinel.Aerosentinel-GCSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Aerosentinel GCS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Aerosentinel GCS";
+			};
+			name = Debug;
+		};
+		3665FFC72A80462800584431 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Aerosentinel.Aerosentinel-GCSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Aerosentinel GCS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Aerosentinel GCS";
+			};
+			name = Release;
+		};
+		3665FFC92A80462800584431 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Aerosentinel.Aerosentinel-GCSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Aerosentinel GCS";
+			};
+			name = Debug;
+		};
+		3665FFCA2A80462800584431 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Aerosentinel.Aerosentinel-GCSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Aerosentinel GCS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3665FF982A80462700584431 /* Build configuration list for PBXProject "Aerosentinel GCS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3665FFC02A80462800584431 /* Debug */,
+				3665FFC12A80462800584431 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3665FFC22A80462800584431 /* Build configuration list for PBXNativeTarget "Aerosentinel GCS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3665FFC32A80462800584431 /* Debug */,
+				3665FFC42A80462800584431 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3665FFC52A80462800584431 /* Build configuration list for PBXNativeTarget "Aerosentinel GCSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3665FFC62A80462800584431 /* Debug */,
+				3665FFC72A80462800584431 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3665FFC82A80462800584431 /* Build configuration list for PBXNativeTarget "Aerosentinel GCSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3665FFC92A80462800584431 /* Debug */,
+				3665FFCA2A80462800584431 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3665FF952A80462700584431 /* Project object */;
+}
