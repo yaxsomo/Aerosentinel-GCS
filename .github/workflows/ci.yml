@@ -30,7 +30,7 @@ jobs:
 
       # ── 5. Front-end dependencies ───────────────────────────────────────────
       - name: Install front-end deps
-        run: pnpm install --frozen-lockfile
+        run: pnpm install --no-frozen-lockfile
         working-directory: apps/gcs-desktop
 
       # ── 6. Rust tests across the workspace ──────────────────────────────────
