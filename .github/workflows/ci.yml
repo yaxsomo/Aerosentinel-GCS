@@ -7,13 +7,32 @@ jobs:
       matrix:
         os: [ubuntu-latest, windows-latest, macos-latest]
     runs-on: ${{ matrix.os }}
+
     steps:
+      # ── 1. Checkout repo ─────────────────────────────────────────────────────
       - uses: actions/checkout@v4
+
+      # ── 2. Rust tool-chain (stable) ──────────────────────────────────────────
       - uses: dtolnay/rust-toolchain@stable
+
+      # ── 3. Node.js (v20) ─────────────────────────────────────────────────────
       - name: Install Node
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - run: pnpm install --frozen-lockfile
+
+      # ── 4. pnpm (v8) ─────────────────────────────────────────────────────────
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+          run_install: false          # we'll run install ourselves
+
+      # ── 5. Front-end dependencies ───────────────────────────────────────────
+      - name: Install front-end deps
+        run: pnpm install --frozen-lockfile
         working-directory: apps/gcs-desktop
-      - run: cargo test --workspace --all-features --verbose
+
+      # ── 6. Rust tests across the workspace ──────────────────────────────────
+      - name: Cargo tests
+        run: cargo test --workspace --all-features --verbose
