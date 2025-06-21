@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+cargo fmt --all
+cargo clippy --workspace --quiet -- -D warnings
+pnpm --filter ./apps/gcs-desktop lint

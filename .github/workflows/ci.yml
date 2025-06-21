@@ -1,0 +1,60 @@
+name: CI
+on: [push, pull_request]
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      # 1 ─ Checkout
+      - uses: actions/checkout@v4
+
+      # 2 ─ Rust tool-chain
+      - uses: dtolnay/rust-toolchain@stable
+
+      # 3 ─ (Linux only) install GTK / WebKit dev libs
+      - name: Install GTK/WebKit dependencies
+        if: matrix.os == 'ubuntu-latest'
+        run: |
+          set -e
+          sudo apt-get update
+          # Try the new 4.1 package names first; fall back to 4.0 for jammy
+          sudo apt-get install -y \
+            libgtk-3-dev \
+            libsoup2.4-dev \
+            libglib2.0-dev \
+            libcairo2-dev \
+            libgdk-pixbuf-2.0-dev \
+            libpango1.0-dev \
+            libatk1.0-dev \
+            libwebkit2gtk-4.1-dev       || \
+          sudo apt-get install -y libwebkit2gtk-4.0-dev
+          sudo apt-get install -y \
+            libjavascriptcoregtk-4.1-dev || \
+          sudo apt-get install -y libjavascriptcoregtk-4.0-dev
+
+
+      # 4 ─ Node.js
+      - name: Install Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # 5 ─ pnpm
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+          run_install: false
+
+      # 6 ─ Front-end deps
+      - name: Install front-end deps
+        run: pnpm install --no-frozen-lockfile
+        working-directory: apps/gcs-desktop
+
+      # 7 ─ Rust tests
+      - name: Cargo tests
+        run: cargo test --workspace --all-features --verbose
