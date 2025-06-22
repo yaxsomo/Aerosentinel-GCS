@@ -15,27 +15,20 @@ jobs:
       # 2 ─ Rust tool-chain
       - uses: dtolnay/rust-toolchain@stable
 
-      # 3 ─ (Linux only) install GTK / WebKit dev libs
-      - name: Install GTK/WebKit dependencies
+      # 3 ─ Linux-only native deps (GTK, WebKit, PTY helper)
+      - name: Install Linux build dependencies
         if: matrix.os == 'ubuntu-latest'
         run: |
           set -e
           sudo apt-get update
-          # Try the new 4.1 package names first; fall back to 4.0 for jammy
           sudo apt-get install -y \
-            libgtk-3-dev \
-            libsoup2.4-dev \
-            libglib2.0-dev \
-            libcairo2-dev \
-            libgdk-pixbuf-2.0-dev \
-            libpango1.0-dev \
-            libatk1.0-dev \
-            libwebkit2gtk-4.1-dev       || \
-          sudo apt-get install -y libwebkit2gtk-4.0-dev
+            pkg-config libudev-dev \            # ← NEW lines (pkg-config already tiny)
+            libgtk-3-dev libsoup2.4-dev libglib2.0-dev libcairo2-dev \
+            libgdk-pixbuf-2.0-dev libpango1.0-dev libatk1.0-dev \
+            libwebkit2gtk-4.1-dev || sudo apt-get install -y libwebkit2gtk-4.0-dev
           sudo apt-get install -y \
-            libjavascriptcoregtk-4.1-dev || \
-          sudo apt-get install -y libjavascriptcoregtk-4.0-dev
-
+            libjavascriptcoregtk-4.1-dev || sudo apt-get install -y libjavascriptcoregtk-4.0-dev
+          sudo apt-get install -y socat
 
       # 4 ─ Node.js
       - name: Install Node
@@ -43,8 +36,7 @@ jobs:
         with:
           node-version: '20'
 
-      # 5 ─ pnpm
-      - name: Install pnpm
+      # 5 ─ pnpm  
         uses: pnpm/action-setup@v2
         with:
           version: 8
@@ -55,6 +47,6 @@ jobs:
         run: pnpm install --no-frozen-lockfile
         working-directory: apps/gcs-desktop
 
-      # 7 ─ Rust tests
+      # 7 ─ Rust tests (unit + integration)
       - name: Cargo tests
         run: cargo test --workspace --all-features --verbose
